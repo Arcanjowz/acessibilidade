@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O que a lei e as normas dizem | Acessibilidade no dia a dia</title>
+    <meta
+      name="description"
+      content="Leis, decretos, WCAG e eMAG: o que a legislação brasileira e as normas técnicas exigem de um site acessível."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,700..900&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    <header class="topo">
+      <div class="ajustes">
+        <div class="ajustes-in" role="group" aria-labelledby="rotulo-ajustes">
+          <span id="rotulo-ajustes" class="ajustes-rotulo">Leitura</span>
+          <button type="button" data-acao="menor">Texto menor</button>
+          <button type="button" data-acao="maior">Texto maior</button>
+          <button type="button" data-acao="restaurar">Tamanho padrão</button>
+          <button type="button" data-acao="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
+          <span class="nivel" data-nivel>Texto em 100%</span>
+        </div>
+      </div>
+      <div class="cabeca">
+        <p class="marca">
+          <a href="index.html">Acessibilidade no dia a dia</a>
+        </p>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="barreiras.html">Barreiras</a></li>
+            <li><a href="tecnologias.html">Tecnologias</a></li>
+            <li><a href="texto-e-links.html">Texto e links</a></li>
+            <li><a href="imagens-cor-e-video.html">Imagens e vídeo</a></li>
+            <li>
+              <a href="leis-e-normas.html" aria-current="page">Leis e normas</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <div class="capa">
+        <p class="meta">Artigo 5 de 5, leitura de 4 minutos</p>
+        <h1>O que a lei e as normas dizem</h1>
+        <p class="lead">
+          O Brasil tem leis que tratam o acesso à informação como direito. Há
+          também normas técnicas que explicam como cumpri-las em uma página web.
+        </p>
+      </div>
+      <div class="folha">
+        <div class="leitura">
+          <nav class="sumario" id="sumario" aria-label="Neste artigo">
+            <p class="sumario-titulo">Neste artigo</p>
+            <ul>
+              <li><a href="#leis">Leis e decretos</a></li>
+              <li><a href="#normas">Normas técnicas</a></li>
+              <li><a href="#wcag">WCAG</a></li>
+              <li><a href="#emag">eMAG</a></li>
+            </ul>
+          </nav>
+          <article class="texto">
+            <section id="leis" aria-labelledby="h-leis">
+              <h2 id="h-leis">Leis e decretos</h2>
+              <p>
+                O acesso à informação na internet é tratado como direito em
+                várias leis brasileiras.
+              </p>
+              <div
+                class="rolagem"
+                tabindex="0"
+                role="region"
+                aria-label="Tabela de leis e decretos sobre acessibilidade"
+              >
+                <table>
+                  <caption>
+                    Principais normas legais
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Norma</th>
+                      <th scope="col">O que trata</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        Decreto 5.296, de 2 de dezembro de 2004
+                      </th>
+                      <td>
+                        Regulamenta leis de acessibilidade. O capítulo VI trata
+                        do acesso à informação e à comunicação, e o artigo 47
+                        trata da acessibilidade virtual.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        Decreto 6.949, de 25 de agosto de 2009
+                      </th>
+                      <td>
+                        Promulga a Convenção sobre os Direitos das Pessoas com
+                        Deficiência, da ONU. O artigo 9 prevê acesso a
+                        tecnologias da informação e da comunicação, inclusive à
+                        internet.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Lei 12.527, de 18 de novembro de 2011</th>
+                      <td>
+                        Lei de Acesso à Informação. Entre as regras para sites
+                        de órgãos públicos está a de garantir acessibilidade de
+                        conteúdo a pessoas com deficiência.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Portaria 3, de 7 de maio de 2007</th>
+                      <td>
+                        Institucionalizou o eMAG no âmbito do SISP e tornou
+                        obrigatória a sua observância nos sites e portais do
+                        governo.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Lei 13.146, de 6 de julho de 2015</th>
+                      <td>
+                        Lei Brasileira de Inclusão da Pessoa com Deficiência. O
+                        artigo 63 exige acessibilidade em sites de órgãos de
+                        governo e de empresas com sede ou representação
+                        comercial no país.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                A Lei Brasileira de Inclusão não se limita ao setor público. Na
+                prática, o artigo 63 alcança bancos, lojas virtuais e
+                operadoras, ou seja, boa parte dos sites que uma pessoa usa na
+                semana.
+              </p>
+            </section>
+            <section id="wcag" aria-labelledby="h-wcag">
+              <h2 id="h-wcag">WCAG, o padrão internacional</h2>
+              <p>
+                As Diretrizes de Acessibilidade para Conteúdo Web, as WCAG, vêm
+                do W3C, o consórcio que define padrões da web, e foram escritas
+                com pessoas e organizações de vários países. A versão 1.0 saiu
+                em 1999 e a 2.0, em dezembro de 2008. O W3C publicou depois as
+                versões 2.1 e 2.2, que mantêm os critérios da 2.0 e acrescentam
+                outros. Este trabalho usa a 2.0, a versão do material de estudo.
+              </p>
+              <p>
+                A WCAG se organiza em quatro princípios. Cada princípio tem
+                recomendações, cada recomendação tem critérios de sucesso, e
+                cada critério tem técnicas para ser cumprido e testado.
+              </p>
+              <ul>
+                <li>
+                  Perceptível: a informação precisa ser apresentada de um jeito
+                  que a pessoa consiga perceber.
+                </li>
+                <li>
+                  Operável: a interface e a navegação precisam funcionar para
+                  quem as usa, inclusive só pelo teclado.
+                </li>
+                <li>
+                  Compreensível: o conteúdo e o funcionamento precisam ser
+                  fáceis de entender.
+                </li>
+                <li>
+                  Robusto: o conteúdo precisa funcionar em diferentes programas,
+                  inclusive tecnologias assistivas.
+                </li>
+              </ul>
+            </section>
+            <section id="emag" aria-labelledby="h-emag">
+              <h2 id="h-emag">eMAG, a versão do governo brasileiro</h2>
+              <p>
+                O eMAG, Modelo de Acessibilidade em Governo Eletrônico, reúne as
+                recomendações para sites e portais do governo. A versão 3.1
+                nasceu de uma parceria entre o então Ministério do Planejamento,
+                Orçamento e Gestão e o projeto de Acessibilidade Virtual do
+                IFRS, e tem a WCAG 2.0 como base.
+              </p>
+              <div
+                class="rolagem"
+                tabindex="0"
+                role="region"
+                aria-label="Tabela de seções do eMAG"
+              >
+                <table>
+                  <caption>
+                    As 45 recomendações do eMAG 3.1 por seção
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Seção</th>
+                      <th scope="col">Recomendações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Marcação</th>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Comportamento</th>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Conteúdo e informação</th>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Apresentação e design</th>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Multimídia</th>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Formulários</th>
+                      <td>8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                O eMAG também padroniza elementos que todo site do governo
+                federal deve ter, como atalhos de teclado, barra de
+                acessibilidade, mapa do site e página de acessibilidade.
+              </p>
+
+              <div class="resumo">
+                <p class="titulo">Em resumo</p>
+                <p>
+                  A lei diz que o acesso precisa existir. A WCAG e o eMAG dizem
+                  como construí-lo, critério por critério.
+                </p>
+              </div>
+            </section>
+          </article>
+        </div>
+        <nav class="passos" aria-label="Continuar a leitura">
+          <a class="passo" href="imagens-cor-e-video.html" rel="prev"
+            ><span class="passo-dir">Página anterior</span
+            ><span class="passo-nome"
+              >Imagens, cor e vídeo sem deixar ninguém de fora</span
+            ></a
+          >
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

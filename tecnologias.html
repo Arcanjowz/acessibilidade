@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Tecnologia assistiva: o que as pessoas usam | Acessibilidade no dia a dia
+    </title>
+    <meta
+      name="description"
+      content="Leitores de tela, linha braille, ampliadores e teclados adaptados: o que cada tecnologia assistiva faz e por que depende de sites bem construídos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,700..900&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    <header class="topo">
+      <div class="ajustes">
+        <div class="ajustes-in" role="group" aria-labelledby="rotulo-ajustes">
+          <span id="rotulo-ajustes" class="ajustes-rotulo">Leitura</span>
+          <button type="button" data-acao="menor">Texto menor</button>
+          <button type="button" data-acao="maior">Texto maior</button>
+          <button type="button" data-acao="restaurar">Tamanho padrão</button>
+          <button type="button" data-acao="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
+          <span class="nivel" data-nivel>Texto em 100%</span>
+        </div>
+      </div>
+      <div class="cabeca">
+        <p class="marca">
+          <a href="index.html">Acessibilidade no dia a dia</a>
+        </p>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="barreiras.html">Barreiras</a></li>
+            <li>
+              <a href="tecnologias.html" aria-current="page">Tecnologias</a>
+            </li>
+            <li><a href="texto-e-links.html">Texto e links</a></li>
+            <li><a href="imagens-cor-e-video.html">Imagens e vídeo</a></li>
+            <li><a href="leis-e-normas.html">Leis e normas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <div class="capa">
+        <p class="meta">Artigo 2 de 5, leitura de 4 minutos</p>
+        <h1>Tecnologia assistiva: o que as pessoas usam</h1>
+        <p class="lead">
+          Programas e aparelhos que ajudam pessoas com deficiência a usar o
+          computador e o celular, e por que nenhum deles resolve um site mal
+          construído.
+        </p>
+      </div>
+      <div class="folha">
+        <div class="leitura">
+          <nav class="sumario" id="sumario" aria-label="Neste artigo">
+            <p class="sumario-titulo">Neste artigo</p>
+            <ul>
+              <li><a href="#conceito">O que é</a></li>
+              <li><a href="#leitores">Leitores de tela</a></li>
+              <li><a href="#braille">Linha braille</a></li>
+              <li><a href="#ampliadores">Ampliadores</a></li>
+              <li><a href="#teclados">Teclados e mouses</a></li>
+              <li><a href="#limite">O limite</a></li>
+            </ul>
+          </nav>
+          <article class="texto">
+            <section id="conceito" aria-labelledby="h-conceito">
+              <h2 id="h-conceito">O que é tecnologia assistiva</h2>
+              <p>
+                Tecnologia assistiva é o conjunto de recursos que dá mais
+                autonomia a pessoas com deficiência. A bengala entra nessa
+                lista, assim como a lupa eletrônica, o aparelho auditivo, a
+                cadeira de rodas motorizada e os programas de computador. Neste
+                artigo interessa a parte digital, a que permite ler, escrever e
+                navegar.
+              </p>
+            </section>
+            <section id="leitores" aria-labelledby="h-leitores">
+              <h2 id="h-leitores">Leitores de tela</h2>
+              <p>
+                O leitor de tela captura o texto que o sistema mostra e o
+                transforma em voz sintetizada. É o recurso mais usado por
+                pessoas cegas, e também serve a quem tem baixa visão ou
+                dislexia. O controle é todo pelo teclado.
+              </p>
+              <p>
+                Há três modos de percorrer uma página. Com as setas, o programa
+                lê tudo. Com a tecla Tab, ele salta de link em link e de botão
+                em botão. Com a tecla H, ele pula de título em título. Quem
+                domina esses atalhos chega ao que procura em segundos, desde que
+                a página tenha títulos e links bem marcados.
+              </p>
+              <div
+                class="rolagem"
+                tabindex="0"
+                role="region"
+                aria-label="Tabela de leitores de tela"
+              >
+                <table>
+                  <caption>
+                    Principais leitores de tela
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Programa</th>
+                      <th scope="col">Sistema</th>
+                      <th scope="col">Custo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">NVDA</th>
+                      <td>Windows</td>
+                      <td>Gratuito, código aberto</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">JAWS</th>
+                      <td>Windows</td>
+                      <td>Pago</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Virtual Vision</th>
+                      <td>Windows</td>
+                      <td>Pago, fabricado no Brasil</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Orca</th>
+                      <td>Linux</td>
+                      <td>Gratuito, código aberto</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">VoiceOver</th>
+                      <td>iOS e macOS</td>
+                      <td>Já vem nos aparelhos Apple</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TalkBack</th>
+                      <td>Android</td>
+                      <td>Já vem no sistema</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">DOSVOX</th>
+                      <td>Interface própria, com voz em português</td>
+                      <td>Gratuito, desenvolvido na UFRJ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section id="braille" aria-labelledby="h-braille">
+              <h2 id="h-braille">Linha braille</h2>
+              <p>
+                A linha braille é um aparelho ligado ao computador por cabo. Ele
+                forma uma linha de texto em relevo, com pinos que sobem e descem
+                em uma régua e o leitor de tela envia o texto e a linha o
+                traduz.
+              </p>
+            </section>
+            <section id="ampliadores" aria-labelledby="h-ampliadores">
+              <h2 id="h-ampliadores">Ampliadores de tela</h2>
+              <p>
+                Ampliadores aumentam a tela inteira ou só uma região. Quem tem
+                baixa visão costuma combiná-los com alto contraste. O efeito
+                colateral é que a página nunca cabe inteira de uma vez, então o
+                conteúdo precisa funcionar em coluna única e sem rolagem
+                lateral. Se o layout quebra com zoom, o ampliador não conserta.
+              </p>
+            </section>
+            <section id="teclados" aria-labelledby="h-teclados">
+              <h2 id="h-teclados">Teclados e mouses adaptados</h2>
+              <p>
+                Para quem tem deficiência física ou mobilidade reduzida existem
+                teclados com espaçamento diferente entre as teclas, teclados
+                virtuais na tela, acionadores que fazem o papel dos botões do
+                mouse, mouses de sopro e mouses controlados pelo olhar. Vários
+                desses dispositivos funcionam como se fossem um teclado.
+              </p>
+            </section>
+            <section id="limite" aria-labelledby="h-limite">
+              <h2 id="h-limite">O limite da tecnologia</h2>
+              <p>
+                A tecnologia assistiva não faz milagre. O leitor de tela lê o
+                que o código diz e não inventa o que falta. Uma imagem sem texto
+                alternativo continua muda, e um botão sem nome continua sem
+                nome.
+              </p>
+              <p>A responsabilidade, no fim, é de quem constrói o site.</p>
+            </section>
+          </article>
+        </div>
+        <nav class="passos" aria-label="Continuar a leitura">
+          <a class="passo" href="barreiras.html" rel="prev"
+            ><span class="passo-dir">Página anterior</span
+            ><span class="passo-nome">Onde as barreiras aparecem</span></a
+          >
+          <a class="passo proximo" href="texto-e-links.html" rel="next"
+            ><span class="passo-dir">Próxima página</span
+            ><span class="passo-nome"
+              >Títulos, links e texto que dá para entender</span
+            ></a
+          >
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Imagens, cor e vídeo sem deixar ninguém de fora | Acessibilidade no dia a
+      dia
+    </title>
+    <meta
+      name="description"
+      content="Texto alternativo, contraste, uso de cor e recursos para vídeo e áudio acessíveis, com uma calculadora de contraste interativa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,700..900&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    <header class="topo">
+      <div class="ajustes">
+        <div class="ajustes-in" role="group" aria-labelledby="rotulo-ajustes">
+          <span id="rotulo-ajustes" class="ajustes-rotulo">Leitura</span>
+          <button type="button" data-acao="menor">Texto menor</button>
+          <button type="button" data-acao="maior">Texto maior</button>
+          <button type="button" data-acao="restaurar">Tamanho padrão</button>
+          <button type="button" data-acao="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
+          <span class="nivel" data-nivel>Texto em 100%</span>
+        </div>
+      </div>
+      <div class="cabeca">
+        <p class="marca">
+          <a href="index.html">Acessibilidade no dia a dia</a>
+        </p>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="barreiras.html">Barreiras</a></li>
+            <li><a href="tecnologias.html">Tecnologias</a></li>
+            <li><a href="texto-e-links.html">Texto e links</a></li>
+            <li>
+              <a href="imagens-cor-e-video.html" aria-current="page"
+                >Imagens e vídeo</a
+              >
+            </li>
+            <li><a href="leis-e-normas.html">Leis e normas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <div class="capa">
+        <p class="meta">Artigo 4 de 5, leitura de 5 minutos</p>
+        <h1>Imagens, cor e vídeo sem deixar ninguém de fora</h1>
+        <p class="lead">
+          Informação que chega só por imagem, só por cor ou só por som exclui
+          alguém. Aqui estão as correções mais comuns, com uma calculadora para
+          testar contraste.
+        </p>
+      </div>
+      <div class="folha">
+        <div class="leitura">
+          <nav class="sumario" id="sumario" aria-label="Neste artigo">
+            <p class="sumario-titulo">Neste artigo</p>
+            <ul>
+              <li><a href="#imagens">Imagens</a></li>
+              <li><a href="#decorativas">Decorativas e links</a></li>
+              <li><a href="#complexas">Gráficos</a></li>
+              <li><a href="#contraste">Contraste</a></li>
+              <li><a href="#cor">Cor como única pista</a></li>
+              <li><a href="#video">Vídeo e áudio</a></li>
+            </ul>
+          </nav>
+          <article class="texto">
+            <section id="decorativas" aria-labelledby="h-decorativas">
+              <h2 id="h-decorativas">
+                Imagens decorativas e imagens que são links
+              </h2>
+              <p>
+                Ícones de enfeite, cantos arredondados e marcadores de lista não
+                têm nada a dizer. O melhor lugar para eles é o CSS, onde o
+                leitor de tela não os vê.
+              </p>
+              <p>
+                Quando a imagem é um link, o alt descreve o destino, e não a
+                figura.
+              </p>
+            </section>
+            <section id="complexas" aria-labelledby="h-complexas">
+              <h2 id="h-complexas">Gráficos e imagens complexas</h2>
+              <p>
+                Um gráfico exige mais do que uma frase. O alt resume, por
+                exemplo "Gráfico de pizza com a escolaridade dos usuários", e os
+                dados completos vão no texto ao lado ou em uma página própria,
+                com um link logo depois da imagem. Quem não vê o gráfico recebe
+                os mesmos números, em forma de tabela ou de lista.
+              </p>
+            </section>
+          </article>
+        </div>
+        <nav class="passos" aria-label="Continuar a leitura">
+          <a class="passo" href="texto-e-links.html" rel="prev"
+            ><span class="passo-dir">Página anterior</span
+            ><span class="passo-nome"
+              >Títulos, links e texto que dá para entender</span
+            ></a
+          >
+          <a class="passo proximo" href="leis-e-normas.html" rel="next"
+            ><span class="passo-dir">Próxima página</span
+            ><span class="passo-nome">O que a lei e as normas dizem</span></a
+          >
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

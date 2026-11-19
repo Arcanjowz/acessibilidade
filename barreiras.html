@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Onde as barreiras aparecem | Acessibilidade no dia a dia</title>
+    <meta
+      name="description"
+      content="Como as barreiras de acessibilidade aparecem no dia a dia para pessoas com deficiência visual, auditiva, física, intelectual e em situações temporárias."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,700..900&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    <header class="topo">
+      <div class="ajustes">
+        <div class="ajustes-in" role="group" aria-labelledby="rotulo-ajustes">
+          <span id="rotulo-ajustes" class="ajustes-rotulo">Leitura</span>
+          <button type="button" data-acao="menor">Texto menor</button>
+          <button type="button" data-acao="maior">Texto maior</button>
+          <button type="button" data-acao="restaurar">Tamanho padrão</button>
+          <button type="button" data-acao="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
+          <span class="nivel" data-nivel>Texto em 100%</span>
+        </div>
+      </div>
+      <div class="cabeca">
+        <p class="marca">
+          <a href="index.html">Acessibilidade no dia a dia</a>
+        </p>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="barreiras.html" aria-current="page">Barreiras</a></li>
+            <li><a href="tecnologias.html">Tecnologias</a></li>
+            <li><a href="texto-e-links.html">Texto e links</a></li>
+            <li><a href="imagens-cor-e-video.html">Imagens e vídeo</a></li>
+            <li><a href="leis-e-normas.html">Leis e normas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <div class="capa">
+        <p class="meta">Artigo 1 de 5, leitura de 5 minutos</p>
+        <h1>Onde as barreiras aparecem</h1>
+        <p class="lead">
+          Barreira é tudo o que impede alguém de fazer o que outros fazem sem
+          pensar. Na rua costuma ser um degrau. Na tela costuma ser um detalhe
+          de código que ninguém notou.
+        </p>
+      </div>
+      <div class="folha">
+        <div class="leitura">
+          <nav class="sumario" id="sumario" aria-label="Neste artigo">
+            <p class="sumario-titulo">Neste artigo</p>
+            <ul>
+              <li><a href="#visao">Visão</a></li>
+              <li><a href="#audicao">Audição</a></li>
+              <li><a href="#mobilidade">Mobilidade</a></li>
+              <li><a href="#atencao">Atenção e leitura</a></li>
+              <li><a href="#temporarias">Qualquer pessoa</a></li>
+            </ul>
+          </nav>
+          <article class="texto">
+            <section id="visao" aria-labelledby="h-visao">
+              <h2 id="h-visao">Visão: cegueira, baixa visão e daltonismo</h2>
+              <p>
+                Quem não enxerga costuma usar um leitor de tela e o teclado. O
+                programa lê em voz alta o que a página contém, na ordem em que o
+                código foi escrito. Por isso uma imagem sem descrição some, um
+                botão sem nome vira só "botão".
+              </p>
+              <p>
+                Há quem leia texto grande apenas quando estiver muito perto e
+                quem só distinga formas, cores e contraste. Essas pessoas usam
+                ampliadores de tela, modos de alto contraste e leitor de tela
+                também. O que atrapalha é contraste fraco e fontes ruins.
+              </p>
+              <p>
+                O daltonismo mais comum é a dificuldade de separar vermelho e
+                verde. O erro clássico é usar a cor como única pista. Um saldo
+                negativo mostrado só em vermelho no aplicativo do banco.
+              </p>
+            </section>
+            <section id="audicao" aria-labelledby="h-audicao">
+              <h2 id="h-audicao">Audição</h2>
+              <p>
+                A deficiência auditiva vai do leve ao profundo. Tem quem ouça
+                alguns sons e não distinga palavras, e quem não ouça nada.
+              </p>
+              <p>
+                Na prática, o público é variado. Algumas pessoas se comunicam em
+                Libras e leem pouco português. Outras são fluentes nas duas
+                línguas. Há quem leia lábios e quem use aparelhos que amplificam
+                o som. A legenda ajuda muita gente, mas para quem tem a Libras
+                como primeira língua o português escrito é uma segunda língua, e
+                um texto cheio de termos/palavras rebuscadas apenas atrapalham.
+              </p>
+              <p>
+                As barreiras mais comuns na internet são o vídeo sem legenda nem
+                janela de Libras, o áudio sem transcrição e o texto em linguagem
+                complicada.
+              </p>
+            </section>
+            <section id="mobilidade" aria-labelledby="h-mobilidade">
+              <h2 id="h-mobilidade">Mobilidade e coordenação motora</h2>
+              <p>
+                Deficiência física é a alteração total ou parcial de uma parte
+                do corpo que compromete uma função física. Mobilidade reduzida
+                descreve quem não se enquadra como pessoa com deficiência, mas
+                tem dificuldade de se mover, de forma permanente ou por um
+                período. Para usar o computador, essas pessoas recorrem a
+                teclados e mouses adaptados, a acionadores e até a mouses de
+                sopro.
+              </p>
+            </section>
+            <section id="atencao" aria-labelledby="h-atencao">
+              <h2 id="h-atencao">Atenção, memória e leitura</h2>
+              <p>
+                Deficiência intelectual é um funcionamento intelectual bem
+                abaixo da média, com início antes dos 18 anos, que afeta
+                atenção, compreensão, memória e raciocínio. A síndrome de Down é
+                um exemplo.
+              </p>
+              <p>
+                Dislexia e TDAH entram na mesma conversa, embora sejam condições
+                diferentes. Quem tem dislexia lê mais devagar e pode trocar ou
+                inverter letras. Muita gente compreende melhor ouvindo o texto,
+                e por isso usa leitor de tela. O TDAH envolve desatenção,
+                hiperatividade e impulsividade.
+              </p>
+            </section>
+            <section id="temporarias" aria-labelledby="h-temporarias">
+              <h2 id="h-temporarias">Barreiras que qualquer pessoa enfrenta</h2>
+              <p>
+                Em um ônibus barulhento, um vídeo sem legenda é um vídeo mudo. A
+                conexão lenta não carrega as imagens, e então só o texto
+                alternativo diz o que havia ali.
+              </p>
+              <div class="resumo">
+                <p class="titulo">Em resumo</p>
+                <p>
+                  Existem três caminhos até a mesma informação chegar a todos os
+                  tipos de usuários, que seriam: ver, ouvir e tocar. Quando o
+                  site oferece só um, alguém fica de fora, por deficiência ou
+                  por circunstância.
+                </p>
+              </div>
+            </section>
+          </article>
+        </div>
+        <nav class="passos" aria-label="Continuar a leitura">
+          <a class="passo" href="index.html" rel="prev"
+            ><span class="passo-dir">Página anterior</span
+            ><span class="passo-nome">Início</span></a
+          >
+          <a class="passo proximo" href="tecnologias.html" rel="next"
+            ><span class="passo-dir">Próxima página</span
+            ><span class="passo-nome"
+              >Tecnologia assistiva: o que as pessoas usam</span
+            ></a
+          >
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

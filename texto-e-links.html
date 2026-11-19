@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Títulos, links e texto que dá para entender | Acessibilidade no dia a dia
+    </title>
+    <meta
+      name="description"
+      content="Como títulos, links, âncoras, redação e documentos para download influenciam a acessibilidade de uma página."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,700..900&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    <header class="topo">
+      <div class="ajustes">
+        <div class="ajustes-in" role="group" aria-labelledby="rotulo-ajustes">
+          <span id="rotulo-ajustes" class="ajustes-rotulo">Leitura</span>
+          <button type="button" data-acao="menor">Texto menor</button>
+          <button type="button" data-acao="maior">Texto maior</button>
+          <button type="button" data-acao="restaurar">Tamanho padrão</button>
+          <button type="button" data-acao="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
+          <span class="nivel" data-nivel>Texto em 100%</span>
+        </div>
+      </div>
+      <div class="cabeca">
+        <p class="marca">
+          <a href="index.html">Acessibilidade no dia a dia</a>
+        </p>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="barreiras.html">Barreiras</a></li>
+            <li><a href="tecnologias.html">Tecnologias</a></li>
+            <li>
+              <a href="texto-e-links.html" aria-current="page">Texto e links</a>
+            </li>
+            <li><a href="imagens-cor-e-video.html">Imagens e vídeo</a></li>
+            <li><a href="leis-e-normas.html">Leis e normas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <div class="capa">
+        <p class="meta">Artigo 3 de 5, leitura de 4 minutos</p>
+        <h1>Títulos, links e texto que dá para entender</h1>
+        <p class="lead">
+          Boa parte da acessibilidade se decide em coisas que parecem pequenas:
+          como se marca um título, como se escreve um link, quantas ideias cabem
+          num parágrafo.
+        </p>
+      </div>
+      <div class="folha">
+        <div class="leitura">
+          <nav class="sumario" id="sumario" aria-label="Neste artigo">
+            <p class="sumario-titulo">Neste artigo</p>
+            <ul>
+              <li><a href="#titulos">Títulos</a></li>
+              <li><a href="#links">Links</a></li>
+              <li><a href="#ancoras">Sumário e âncoras</a></li>
+              <li><a href="#escrita">Escrever</a></li>
+              <li><a href="#documentos">Documentos</a></li>
+            </ul>
+          </nav>
+          <article class="texto">
+            <section id="titulos" aria-labelledby="h-titulos">
+              <h2 id="h-titulos">Títulos funcionam como mapa</h2>
+              <p>
+                Quem enxerga reconhece um título pelo tamanho e pela cor. Quem
+                usa leitor de tela depende do código: se o texto foi marcado
+                como título, o programa anuncia "título de nível 2" e permite
+                pular de um para outro com a tecla H. Se foi só uma linha em
+                negrito, não existe título nenhum para o leitor.
+              </p>
+            </section>
+            <section id="links" aria-labelledby="h-links">
+              <h2 id="h-links">Links que fazem sentido fora do contexto</h2>
+              <p>
+                Leitores de tela oferecem uma lista com todos os links da
+                página. Se a lista tiver dez itens chamados "Leia mais", ela não
+                serve para nada. O mesmo vale para "Clique aqui" e "Saiba mais":
+                nenhum dos dois diz para onde o link leva.
+              </p>
+            </section>
+            <section id="ancoras" aria-labelledby="h-ancoras">
+              <h2 id="h-ancoras">Sumário e âncoras em textos longos</h2>
+              <p>
+                Em textos longos, o ideal é abrir itens que levam às seções e
+                fechar cada seção com um link de volta ao sumário. Quem usa
+                mouse rola a página sem pensar nisso. Quem navega só pelo
+                teclado, ou por um acionador, economiza dezenas de toques.
+              </p>
+            </section>
+            <section id="escrita" aria-labelledby="h-escrita">
+              <h2 id="h-escrita">Escrever para ser entendido</h2>
+              <p>
+                Acessibilidade vale também para o texto. Frases longas, palavras
+                raras e siglas sem explicação cansam todo mundo e travam quem
+                tem dificuldade de leitura, deficiência intelectual ou pouco
+                contato com o português escrito.
+              </p>
+            </section>
+          </article>
+        </div>
+        <nav class="passos" aria-label="Continuar a leitura">
+          <a class="passo" href="tecnologias.html" rel="prev"
+            ><span class="passo-dir">Página anterior</span
+            ><span class="passo-nome"
+              >Tecnologia assistiva: o que as pessoas usam</span
+            ></a
+          >
+          <a class="passo proximo" href="imagens-cor-e-video.html" rel="next"
+            ><span class="passo-dir">Próxima página</span
+            ><span class="passo-nome"
+              >Imagens, cor e vídeo sem deixar ninguém de fora</span
+            ></a
+          >
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>
