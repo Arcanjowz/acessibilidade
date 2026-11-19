@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Início | Acessibilidade no dia a dia</title>
+    <meta
+      name="description"
+      content="Artigos sobre acessibilidade na vida cotidiana: barreiras, tecnologia assistiva, boas práticas na web e legislação brasileira."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,700..900&family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div id="anuncio" class="sr-only" role="status" aria-live="polite"></div>
+    <header class="topo">
+      <div class="ajustes">
+        <div class="ajustes-in" role="group" aria-labelledby="rotulo-ajustes">
+          <span id="rotulo-ajustes" class="ajustes-rotulo">Leitura</span>
+          <button type="button" data-acao="menor">Texto menor</button>
+          <button type="button" data-acao="maior">Texto maior</button>
+          <button type="button" data-acao="restaurar">Tamanho padrão</button>
+          <button type="button" data-acao="contraste" aria-pressed="false">
+            Alto contraste
+          </button>
+          <span class="nivel" data-nivel>Texto em 100%</span>
+        </div>
+      </div>
+      <div class="cabeca">
+        <p class="marca">
+          <a href="index.html">Acessibilidade no dia a dia</a>
+        </p>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="barreiras.html">Barreiras</a></li>
+            <li><a href="tecnologias.html">Tecnologias</a></li>
+            <li><a href="texto-e-links.html">Texto e links</a></li>
+            <li><a href="imagens-cor-e-video.html">Imagens e vídeo</a></li>
+            <li><a href="leis-e-normas.html">Leis e normas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <div class="capa">
+        <p class="meta">Artigos para leitura</p>
+        <h1>Acessibilidade na vida cotidiana</h1>
+        <p class="lead">
+          Cinco artigos sobre as barreiras que aparecem no ônibus, no banco, no
+          mercado e na tela do celular, e sobre o que dá para fazer a respeito.
+        </p>
+      </div>
+      <div class="folha">
+        <div class="texto">
+          <section aria-labelledby="h-porque">
+            <h2 id="h-porque">Por que escrever sobre isso</h2>
+            <p>
+              Quase todo mundo já desistiu de um formulário que apagou tudo
+              depois de um erro. Passa rápido e a gente esquece. Para algumas
+              pessoas, situações assim fazem parte do dia inteiro, todos os
+              dias.
+            </p>
+            <p>
+              O material de estudo da Enap, que serviu de base para este
+              trabalho, define acessibilidade na web como a possibilidade de
+              qualquer pessoa perceber, entender, navegar e interagir com uma
+              página. São quatro referencias, e cada um deixa alguém de fora
+              quando o site é mal feito.
+            </p>
+          </section>
+
+          <section aria-labelledby="h-artigos">
+            <h2 id="h-artigos">Os artigos</h2>
+            <p>
+              Cinco artigos e uma página sobre o próprio site. Podem ser lidos
+              em qualquer ordem.
+            </p>
+            <ul class="cartoes">
+              <li class="cartao" style="--i: 0">
+                <h3><a href="barreiras.html">Onde as barreiras aparecem</a></h3>
+                <p>
+                  Visão, audição, mobilidade, atenção e situações temporárias,
+                  com exemplos do dia a dia.
+                </p>
+              </li>
+              <li class="cartao" style="--i: 1">
+                <h3>
+                  <a href="tecnologias.html"
+                    >Tecnologia assistiva: o que as pessoas usam</a
+                  >
+                </h3>
+                <p>
+                  Leitores de tela, linha braille, ampliadores e teclados
+                  adaptados, e o limite de cada um.
+                </p>
+              </li>
+              <li class="cartao" style="--i: 2">
+                <h3>
+                  <a href="texto-e-links.html"
+                    >Títulos, links e texto que dá para entender</a
+                  >
+                </h3>
+                <p>
+                  Pequenas escolhas de marcação e de redação que decidem se uma
+                  página funciona.
+                </p>
+              </li>
+              <li class="cartao" style="--i: 3">
+                <h3>
+                  <a href="imagens-cor-e-video.html"
+                    >Imagens, cor e vídeo sem deixar ninguém de fora</a
+                  >
+                </h3>
+                <p>
+                  Texto alternativo, contraste, informação que não depende de
+                  cor e vídeo com legenda.
+                </p>
+              </li>
+              <li class="cartao" style="--i: 4">
+                <h3>
+                  <a href="leis-e-normas.html">O que a lei e as normas dizem</a>
+                </h3>
+                <p>
+                  Leis, decretos, WCAG e eMAG, com o que cada um exige de um
+                  site.
+                </p>
+              </li>
+              <li class="cartao" style="--i: 5">
+                <h3>
+                  <a href="sobre-este-site.html"
+                    >Como este site foi feito e testado</a
+                  >
+                </h3>
+                <p>
+                  Recursos de acessibilidade, medidas de contraste, registro de
+                  testes e referências.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
